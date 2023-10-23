@@ -20,4 +20,51 @@ max-width: 100%;
 max-height: 100%;
 }
  /* making the navlist a dropdown selector */
- 
+ .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Change left property to push the submenu to the right */
+    background-color: #fff;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+}
+
+.menu > li:hover .submenu-content {
+    display: block;
+}
+
+.submenu-content > li {
+    display: block;
+}
+
+.submenu-content > li > a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.submenu-content > li:hover {
+    background-color: #f0f0f0;
+}
