@@ -42,8 +42,8 @@ max-height: 100%;
 .submenu-content {
     display: none;
     position: absolute;
-    top: 0;
-    left: 100%; /* Change left property to push the submenu to the right */
+    top: 100%;
+    left: 100%;
     background-color: #fff;
     box-shadow: 0 4px rgba(0, 0, 0, 0.2);
     list-style: none;
