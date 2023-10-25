@@ -4,8 +4,7 @@ October 22, 2023
 CSS stylesheet */
 
 /* CSS reset rule */
-
-html, head, nav, body, div, main, footer, a, img {
+html, head, nav, body, div, main, footer, a, img, h1, h2, li, ul {
 margin:0;
 padding:0;
 border:0;
@@ -15,14 +14,33 @@ vertical-align: baseline;
 }
 
 /* making images responsive */
-img {
+.bannerimage img {
 max-width: 100%;
 max-height: 100%;
-display: block;
+width: 250px;
+height: 250px;
+display: inline-block;
+float: left;
 }
+img{
+    max-width: 100%;
+    width: auto;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 230%;
+    padding-top: 90px;
+}
+h2 {
+    font-size: 130%;
+}
+
 /*remove list bullets from nav */
 nav{
-list-style: none;    
+list-style: none;
+padding-top: 100px;
+text-align: center;    
 }
 /*remove underline from links*/
 a {
