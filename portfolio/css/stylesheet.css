@@ -4,7 +4,7 @@ October 22, 2023
 CSS stylesheet */
 
 /* CSS reset rule */
-html, head, nav, body, div, main, footer, a, img, h1, h2, li, ul {
+html, head, nav, body, div, main, footer, a, img, h1, h2, li, ul, figure, figcaption {
 margin:0;
 padding:0;
 border:0;
@@ -33,6 +33,7 @@ h1 {
     font-size: 230%;
     padding-top: 90px;
     min-width: 450px;
+    text-shadow: 1px 1px 1px blue;
 }
 h2 {
     font-size: 130%;
@@ -205,4 +206,24 @@ text-decoration: none;
     opacity: 1;
     visibility: visible;
     transition-delay: 0ms;
+}
+
+/*making the bulletpts in hobbylist appear*/
+.hobbylist ul {
+    padding-left: 20px;
+}
+
+/*the css grid container rules for the Life page*/
+.boxofchocolates{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.chocos {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.chocos ul {
+    padding-left: 20px;
 }
