@@ -58,14 +58,17 @@ text-decoration: none;
 }
 /*media query tablet edition*/
 @media only screen and (min-width:625px) and (max-width:1023px) {
-
+/*at writing, nothing seems to need fenangling to make this distinction*/
 }
 /*Desktop media query*/
-@media pnly screen and (min-width:1024px) {
-
+@media only screen and (min-width:1024px) {
+    /*an attahboy for using the most master of gaming races. removing the rounded edge*/
+    img {
+        border-top-left-radius: 0;
+    }
 }
 
-/*Mobile. Really this is the point in-which the navbar stops working properly*/
+/*This is the point in-which the navbar stops working properly*/
 @media only screen and (max-width:624px) {
     /*is not currently becoming visible*/
     .mobile-nav {
@@ -75,69 +78,28 @@ text-decoration: none;
     .menu {
         display: none;
     }
+    body{
+        font-size: 105%;
+    }
 }
+/*Mobile screen font sizing*/
+@media only screen and (max-width:375px) {
+    h1{
+        padding-top: 40px;
+    }
+    body{
+        font-size: 120%;
+    }
+    main{
+        padding-top: 130px;
+    }
+}
+
  /*setup for mobile nav, attempting to keep the formatting the same as the full-nav.
   Getting to any page has access to a subpage, it just wont be as easy to get to multiple pages on mobile*/
  .mobile-nav {
     display: none;
-    --menu-height: 40px;
-    padding-top: 250px;
-    box-sizing: border-box;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left:0;
- }
- .mobile-nav ul {
-    list-style: none;
-    padding: 16px;
-    margin: 0;
- }
- .mobile-nav ul li, .mobile-nav ul li a {
-    opacity: 0.8;
-    color: #ffffff;
-    cursor: pointer;
-    transition: 200ms;
-    text-decoration: none;
-    white-space: nowrap;
-    font-weight: 700;
-}
-.mobile-nav ul li a {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-.mobile-nav ul li {
-    padding-right: 36px;
-}
-.mobile-nav ul li::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid blue;
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.mobile-nav ul .finalentry::before {
-    padding-right: 0;
-    display: none;
-}
-
-.mobile-nav > ul {
-    display: flex;
-    height: var(--menu-height);
-    align-items: center;
-    background-color: black;
-}
-.mobile-nav > ul li {
-    position: relative;
-    margin: 0 8px;
-}
+    }
 
  /* making the navlist a dropdown selector */
  
