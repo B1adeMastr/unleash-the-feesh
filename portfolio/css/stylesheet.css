@@ -39,7 +39,7 @@ h2 {
 /*keeps body below the nav bar */
 main{
 padding-top: 260px;
-font-family: 'Open Sans';
+font-family: 'Open Sans', sans-serif;
 }
 
 /*making footer spaced a bit*/
