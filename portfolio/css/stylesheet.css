@@ -36,11 +36,17 @@ h2 {
     font-size: 130%;
 }
 
-/*remove list bullets from nav */
+/*holds the old spot the nav area took, removing will remove the buffer between the body and the toolbar */
 nav{
 list-style: none;
-padding-top: 100px;
-text-align: center;    
+padding-top: 175px;
+text-align: center;
+}
+
+/*making footer spaced a bit*/
+footer{
+    padding-top: 40px;
+    text-align: center;
 }
 /*remove underline from links*/
 a {
@@ -49,51 +55,108 @@ text-decoration: none;
 
 
  /* making the navlist a dropdown selector */
+ 
  .menu {
+    --menu-height: 40px;
+    padding-top: 250px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left:0;
+    width: 100vw;
+ }
+ .menu ul {
     list-style: none;
-    padding: 0;
+    padding: 16px;
     margin: 0;
-}
-
-.menu > li {
-    display: inline-block;
-    position: relative;
-    margin-right: 20px;
-}
-
-.menu > li > a {
+ }
+.menu ul li, .menu ul li a {
+    opacity: 0.8;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 200ms;
     text-decoration: none;
-    color: #333;
-    padding: 10px;
-    display: block;
+    white-space: nowrap;
+    font-weight: 700;
 }
-
-.submenu-content {
-    display: none;
+.menu ul li:hover, .menu ul li a:hover {
+    opacity: 1;
+}
+.menu ul li a, .menu ul li a a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.menu ul li {
+    padding-right: 36px;
+}
+.menu ul li::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid blue;
     position: absolute;
-    top: 100%;
-    left: 50%;
-    background-color: #fff;
-    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
-    list-style: none;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu ul .finalentry::before {
+    padding-right: 0;
+    display: none;
+}
+.menu > ul {
+    display: flex;
+    height: var(--menu-height);
+    align-items: center;
+    background-color: black;
+}
+.menu > ul li {
+    position: relative;
+    margin: 0 8px;
+}
+.menu > ul li ul {
+    visibility: hidden;
+    opacity: 0;
     padding: 0;
+    min-width: 160px;
+    background-color: black;
+    position: absolute;
+    top: calc(var(--menu-height)+5px);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 200ms;
+    transition-delay: 200ms;
 }
-
-.menu > li:hover .submenu-content {
-    display: block;
+.menu > ul li ul li {
+    margin: 0;
+    padding: 8 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30px;
+    padding-right: 40px;
 }
-
-.submenu-content > li {
-    display: block;
+.menu > ul li ul li::before {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid blue;
 }
-
-.submenu-content > li > a {
-    color: #333;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
+.menu > ul li ul li ul{
+    top:-2%;
+    left:100%;
+    transform: translate(0);
 }
-
-.submenu-content > li:hover {
-    background-color: #f0f0f0;
+.menu > ul li ul li:hover{
+    background-color: black;
+}
+.menu > ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0ms;
 }
