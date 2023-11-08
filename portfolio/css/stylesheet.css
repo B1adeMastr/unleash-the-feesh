@@ -39,7 +39,7 @@ h2 {
 /*holds the old spot the nav area took, removing will remove the buffer between the body and the toolbar */
 nav{
 list-style: none;
-padding-top: 175px;
+padding-top: 150px;
 text-align: center;
 }
 
