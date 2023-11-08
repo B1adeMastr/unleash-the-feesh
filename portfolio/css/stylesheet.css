@@ -32,15 +32,18 @@ img{
 h1 {
     font-size: 230%;
     padding-top: 90px;
+    min-width: 450px;
 }
 h2 {
     font-size: 130%;
+    min-width: 450px;
 }
 
 /*keeps body below the nav bar */
 main{
-padding-top: 260px;
+padding-top: 150px;
 font-family: 'Open Sans', sans-serif;
+min-width: 450px;
 }
 
 /*making footer spaced a bit*/
@@ -52,6 +55,14 @@ footer{
 a {
 text-decoration: none;
 }
+/*media query tablet edition*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+}
+@media screen and (min-width:1024px) {
+    
+}
+
 
 
  /* making the navlist a dropdown selector */
@@ -61,10 +72,9 @@ text-decoration: none;
     padding-top: 250px;
     box-sizing: border-box;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
     left:0;
-    width: 100vw;
  }
  .menu ul {
     list-style: none;
