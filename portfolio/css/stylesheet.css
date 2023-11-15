@@ -57,50 +57,8 @@ footer{
 a {
 text-decoration: none;
 }
-/*media query tablet edition*/
-@media only screen and (min-width:625px) and (max-width:1023px) {
-/*at writing, nothing seems to need fenangling to make this distinction*/
-}
-/*Desktop media query*/
-@media only screen and (min-width:1024px) {
-    /*an attahboy for using the most master of gaming races. removing the rounded edge*/
-    img {
-        border-top-left-radius: 0;
-    }
-}
 
-/*This is the point in-which the navbar stops working properly*/
-@media only screen and (max-width:624px) {
-    /*is not currently becoming visible*/
-    .mobile-nav {
-        display: block;
-    }
-    /*this appears to be going away as-intended*/
-    .menu {
-        display: none;
-    }
-    body{
-        font-size: 105%;
-    }
-}
-/*Mobile screen font sizing*/
-@media only screen and (max-width:375px) {
-    h1{
-        padding-top: 40px;
-    }
-    body{
-        font-size: 120%;
-    }
-    main{
-        padding-top: 130px;
-    }
-}
 
- /*setup for mobile nav, attempting to keep the formatting the same as the full-nav.
-  Getting to any page has access to a subpage, it just wont be as easy to get to multiple pages on mobile*/
- .mobile-nav {
-    display: none;
-    }
 
  /* making the navlist a dropdown selector */
  
@@ -226,4 +184,49 @@ text-decoration: none;
 }
 .chocos ul {
     padding-left: 20px;
+}
+
+ /*setup for mobile nav, attempting to keep the formatting the same as the full-nav.*/
+  .slicknav_menu {
+    display: none;
+    }
+
+/*media query tablet edition*/
+@media only screen and (min-width:625px) and (max-width:1023px) {
+/*at writing, nothing seems to need fenangling to make this distinction*/
+}
+
+/*Desktop media query*/
+@media only screen and (min-width:1024px) {
+    /*an attahboy for using the most master of gaming races. removing the rounded edge*/
+    img {
+        border-top-left-radius: 0;
+    }
+}
+
+/*This is the point in-which the navbar stops working properly*/
+@media only screen and (max-width:624px) {
+    /*is not currently working*/
+    .main_menu {
+        display:none;
+    }
+
+    .mobile_menu {
+        display:block;
+    }
+    body{
+        font-size: 105%;
+    }
+}
+/*Mobile screen font sizing*/
+@media only screen and (max-width:375px) {
+    h1{
+        padding-top: 40px;
+    }
+    body{
+        font-size: 120%;
+    }
+    main{
+        padding-top: 130px;
+    }
 }
