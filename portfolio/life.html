@@ -8,14 +8,24 @@
 <html lang="en">
     <html lang="en">
         <head>
-            <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-            <figure><div class="bannerimage"><a href="home.html"><img src="images/cb html image.jpg" alt="Image of Colin Beary"/></a></div>
-                <figcaption><h1>Colin Beary</h1>
-                <h2>"Never let them know <br> your next move."</h2></figcaption></figure>
+            <meta charset="utf-8" />
+            <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+            <link rel="stylesheet" href="css/slicknav.css"/>
+            
+            <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="js/jquery.slicknav.js"></script>
+          
+
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                      $(".main_menu").slicknav({ prependTo: ".mobile_menu" });
+                    });
+                </script>
         </head>
-    <nav>
+    
+        <nav class="mobile_menu"></nav>
+        <nav class="main_menu">
         <div class="menu">
             <ul>
                 <li class="finalentry"><a href="home.html">Home</a></li>
@@ -125,7 +135,13 @@
         </div>
     </nav>
     <body>
-        
+        <header>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+            <figure><div class="bannerimage"><a href="home.html"><img src="images/cb html image.jpg" alt="Image of Colin Beary"/></a></div>
+                <figcaption><h1>Colin Beary</h1>
+                <h2>"Never let them know <br> your next move."</h2></figcaption></figure>
+
+        </header>
         <main>
             <div class="boxofchocolates">
                 <div class="chocos">

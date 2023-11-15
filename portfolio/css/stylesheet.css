@@ -187,7 +187,7 @@ text-decoration: none;
 }
 
  /*setup for mobile nav, attempting to keep the formatting the same as the full-nav.*/
-  .slicknav_menu {
+  .mobile_menu {
     display: none;
     }
 
@@ -206,13 +206,20 @@ text-decoration: none;
 
 /*This is the point in-which the navbar stops working properly*/
 @media only screen and (max-width:624px) {
-    /*is not currently working*/
+/*is going away at least*/
     .main_menu {
         display:none;
     }
-
+    /*is not currently working*/
     .mobile_menu {
         display:block;
+        --menu-height: 40px;
+        padding-top: 250px;
+        box-sizing: border-box;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left:0;
     }
     body{
         font-size: 105%;
