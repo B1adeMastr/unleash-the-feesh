@@ -24,7 +24,7 @@ float: left;
 padding: 0%;
 top:0px;
 }
-img{
+.bannerimg{
     max-width: 100%;
     width: auto;
     display: inline-block;
@@ -201,7 +201,7 @@ text-decoration: none;
 /*Desktop media query*/
 @media only screen and (min-width:1024px) {
     /*an attahboy for using the most master of gaming races. removing the rounded edge*/
-    img {
+    .bannerimage {
         border-top-left-radius: 0;
     }
 }
@@ -263,3 +263,8 @@ table {
     padding: 8px;
     font-size: 120%;
   }
+  .socialimg{
+    /*min size is 21px*/
+    height: 21px;
+    width: 21px;
+    }
