@@ -4,7 +4,7 @@ October 22, 2023
 CSS stylesheet */
 
 /* CSS reset rule */
-html, head, nav, body, div, main, footer, a, img, h1, h2, li, ul, figure, figcaption {
+html, head, nav, body, div, main, footer, a, img, h1, h2, li, ul, figure, figcaption, table, th, tr {
 margin:0;
 padding:0;
 border:0;
@@ -21,6 +21,8 @@ width: 250px;
 height: 250px;
 display: inline-block;
 float: left;
+padding: 0%;
+top:0px;
 }
 img{
     max-width: 100%;
@@ -58,17 +60,14 @@ a {
 text-decoration: none;
 }
 
-
-
  /* making the navlist a dropdown selector */
- 
+
  .menu {
     --menu-height: 40px;
-    padding-top: 250px;
     box-sizing: border-box;
-    position: fixed;
+    position: relative;
     width: 100%;
-    top: 0;
+    top: 322px;
     left:0;
  }
  .menu ul {
@@ -190,6 +189,9 @@ text-decoration: none;
   .mobile_menu {
     display: none;
     }
+    .table_list {
+        display: none;
+    }
 
 /*media query tablet edition*/
 @media only screen and (min-width:625px) and (max-width:1023px) {
@@ -210,19 +212,24 @@ text-decoration: none;
     .main_menu {
         display:none;
     }
-    /*is not currently working*/
     .mobile_menu {
         display:block;
         --menu-height: 40px;
-        padding-top: 250px;
+        padding-top: 0px;
         box-sizing: border-box;
-        position: fixed;
+        position: relative;
         width: 100%;
-        top: 0;
+        top: 320px;
         left:0;
     }
     body{
         font-size: 105%;
+    }
+    .table_list {
+        display: block;
+    }
+    table {
+        display: none;
     }
 }
 /*Mobile screen font sizing*/
@@ -237,3 +244,22 @@ text-decoration: none;
         padding-top: 130px;
     }
 }
+
+.tablehead {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.tableinfo{
+    padding-left: 40px;
+}
+/*table css*/
+table {
+    min-width: 624px;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 120%;
+  }
