@@ -4,7 +4,7 @@ October 22, 2023
 CSS stylesheet */
 
 /* CSS reset rule */
-html, head, nav, body, div, main, footer, a, img, h1, h2, li, ul, figure, figcaption, table, th, tr {
+html, head, nav, body, div, main, footer, a, img, h1, h2, li, ul, figure, figcaption, table, th, tr, form, video {
 margin:0;
 padding:0;
 border:0;
@@ -267,4 +267,9 @@ table {
     /*min size is 21px*/
     height: 21px;
     width: 21px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
     }
