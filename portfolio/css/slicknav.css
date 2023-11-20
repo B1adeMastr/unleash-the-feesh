@@ -88,13 +88,13 @@
 }
 /* Button Text */
 .slicknav_menu .slicknav_menutxt {
-	color: #FFF;
+	color: white;
 	font-weight: bold;
 	text-shadow: 0 1px 3px #000;
 }
 /* Button Lines */
 .slicknav_menu .slicknav_icon-bar {
-	background-color: #f5f5f5;
+	background-color: white;
 }
 .slicknav_menu {
 	background: grey;
@@ -102,7 +102,7 @@
 	align-items: center;
 }
 .slicknav_nav {
-	color: #fff;
+	color: black;
 	margin: 0;
 	padding: 0;
 	font-size: 0.875em;
@@ -123,7 +123,7 @@
 	padding: 5px 10px;
 	margin: 2px 5px;
 	text-decoration: none;
-	color: #fff;
+	color: black;
 }
 .slicknav_nav .slicknav_item a {
 	padding: 0;
@@ -133,14 +133,14 @@
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	background: #ccc;
-	color: #fff;
+	background: grey;
+	color: black;
 }
 .slicknav_nav a:hover {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
-	background: #ccc;
+	background: grey;
 	color: #222;
 }
 .slicknav_nav .slicknav_txtnode {
